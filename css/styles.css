@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+::selection {
+  color: white;
+  background: #9fb4f2;
+}
+header {
+  padding-top: 5%;
+  letter-spacing: 4px;
+}
+
+.time-zone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.time-zone h1 {
+  font-size: 3rem;
+  letter-spacing: 8px;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.temp-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+span {
+  padding-left: 10px;
+  font-size: 2rem;
+}
+*/ img {
+  padding: 10px;
+}
+
+input {
+  padding: 10px;
+  border-style: none;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline-color: #4e6096;
+}
+
+.myButton {
+  box-shadow: inset 0px 1px 0px 0px #9fb4f2;
+  background-color: rgb(204, 132, 163);
+  border-radius: 6px;
+  border: 1px solid #4f5a7c;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #031255 5%, #546585 100%);
+  background-color: #031255;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+footer {
+  padding: 2%;
+}
+
+footer span {
+  font-size: 20px;
+}
+
+@media (max-width: 530px) {
+  .time-zone {
+    display: block;
+    text-align: center;
+  }
+  input {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .myButton {
+    width: 100%;
+  }
+  .time-zone h1 {
+    letter-spacing: 0;
+  }
+}
